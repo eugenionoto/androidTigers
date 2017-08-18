@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:1.2.2'
+    }
+}
+apply plugin: 'android'
+
+android {
+    compileSdkVersion 'android-23'
+    buildToolsVersion '23.0.1'
+    
+    signingConfigs {
+    release {
+      storeFile file("my-release-key.keystore")
+      storePassword "lalala17"
+      keyAlias "baseballStat"
+      keyPassword "spocklala"
+    }
+  }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            signingConfig signingConfigs.release
+        }
+    }
+}

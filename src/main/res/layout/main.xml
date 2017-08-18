@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView
+	 android:id="@+id/textView1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Stat"
+    />
+    
+ <Button
+     android:id="@+id/buttonCreateStat"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="Faire une statistique" />
+ <Button
+     android:id="@+id/buttonViewStat"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="Voir une statistique" />
+     
+<TextView
+	 android:id="@+id/textView2"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:text="Options"
+    />
+<Button
+     android:id="@+id/buttonAdd"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="Ajouter un joueur" />
+<Button
+     android:id="@+id/buttonRemove"
+     android:layout_width="fill_parent"
+     android:layout_height="wrap_content"
+     android:text="Supprimer un joueur" />
+</LinearLayout>
+

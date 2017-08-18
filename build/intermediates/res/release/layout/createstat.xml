@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" >
+
+  <!-- Header aligned to top -->
+  <RelativeLayout
+    android:id="@+id/header"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:gravity="center" >
+
+    <TextView
+    	android:id="@+id/textViewName"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textSize="29sp" />
+  </RelativeLayout>
+
+  <!-- Footer aligned to bottom -->
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footer"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+    android:gravity="center" >
+    
+		<Button
+			  android:id="@+id/buttonOk"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="OK" />
+		 <Button
+			  android:id="@+id/buttonCancel"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="Cancel" />
+	</LinearLayout>     
+
+
+  <!-- Scrollable Item below header and above footer -->
+  <ScrollView
+    android:id="@+id/scrollableContents"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_above="@id/footer"
+    android:layout_below="@id/header" 
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp">
+
+    <LinearLayout
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:gravity="center_horizontal"
+      android:orientation="vertical" >
+
+      <Button
+			  android:id="@+id/buttonStrike"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="Strike" />
+		<Button
+			  android:id="@+id/buttonOut"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="Hit and out" />
+		<Button
+			  android:id="@+id/buttonFly"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="Batter out (fly ball ou sur base)" />
+		<Button
+			  android:id="@+id/buttonRun"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="Run to firs base (at least)" />
+		<Button
+			  android:id="@+id/buttonWalk"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="Walk" />
+		<Button
+			  android:id="@+id/buttonPoint"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="I score on run" />
+		<Button
+			  android:id="@+id/buttonPointOther"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="Teammates scores on my hit" />
+		<Button
+			  android:id="@+id/buttonHomeRun"
+			  android:layout_width="fill_parent"
+			  android:layout_height="wrap_content"
+			  android:layout_weight="1"
+			  android:text="Home run" />
+
+    </LinearLayout>
+
+  </ScrollView>
+
+</RelativeLayout>
+<!-- From: file:/home/eugenio/androidApp/src/main/res/layout/createstat.xml -->
